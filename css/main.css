@@ -8,6 +8,8 @@
     --orange: #FCAE4A;
     --blue: #549EF2;
     --black: #4D4F62;
+    --white: #fff;
+    --bgcolor: #FAFAFA;
     --poppins: "Poppins"
 }
 
@@ -48,8 +50,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    column-gap: 64px;
+    row-gap: 64px;
     margin: auto;
+    background-color: var(--bgcolor);
 }
 
 
@@ -111,6 +114,94 @@ body {
 }
 
 /* //SITE-INFO */
+
+
+/* CARD */
+
+.cards {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 350px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
+    padding-top: 28px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    text-align: left;
+    position: relative;
+}
+
+.card-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
+    border-radius: 8px 8px 0px 0px;
+}
+
+.supervisor {
+    background-color: var(--green);
+}
+
+.builder {
+    background-color: var(--red);
+}
+
+.karma {
+    background-color: var(--orange);
+}
+
+.Calculator {
+    background-color: var(--blue);
+}
+
+.card-title {
+    color: var(--black);
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-text {
+    margin-top: 6px;
+    margin-bottom: 40px;
+    color: var(--black);
+    font-family: var(--poppins);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.09px;
+    opacity: 0.5;
+}
+
+.card-img-box {
+    text-align: right;
+}
+
+/* CARD-CENTER */
+
+.card-center {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* //CARD-CENTER */
+
+
+/* //CARD */
 
 
 
