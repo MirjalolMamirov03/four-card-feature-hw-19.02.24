@@ -1,8 +1,11 @@
+
+
+
 /* SITE-MEDIA */
 
 
 
-@media (max-width: 375px) {
+@media (max-width:375) {
 
 
 
@@ -51,8 +54,6 @@
     }
 
     body {
-        max-width: 311px;
-        width: 100%;
         display: flex;
         padding-top: 85px;
         padding-bottom: 78px;
@@ -96,16 +97,12 @@
 }
 
 .info-text {
-    color: var(--black);
-    font-family: var(--poppins);
     font-size: 24px;
     font-weight: 300;
     letter-spacing: 0.167px;
 }
 
 .info-title {
-    color: var(--black);
-    font-family: var(--poppins);
     font-size: 24px;
     font-weight: 600;
     letter-spacing: .167px;
@@ -113,7 +110,8 @@
 
 .info-desc {
     text-align: center;
-    max-width: 540px;
+    max-width: 311px;
+    width: 100%;
     color: var(--black);
     font-family: var(--poppins);
     font-size: 15px;
@@ -130,8 +128,8 @@
 /* CARD */
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; 
+    flex-wrap: wrap; 
     gap: 25px;
     justify-content: center;
     align-items: center;
@@ -148,39 +146,6 @@
     position: relative;
 }
 
-.card-line {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.50);
-    border-radius: 8px 8px 0px 0px;
-}
-
-.supervisor {
-    background-color: var(--green);
-}
-
-.builder {
-    background-color: var(--red);
-}
-
-.karma {
-    background-color: var(--orange);
-}
-
-.Calculator {
-    background-color: var(--blue);
-}
-
-.card-title {
-    color: var(--black);
-    font-family: var(--poppins);
-    font-weight: 600;
-    font-size: 20px;
-}
-
 .card-text {
     max-width: 254px;
     width: 100%;
@@ -193,10 +158,6 @@
     line-height: 23px;
     letter-spacing: 0.09px;
     opacity: 0.5;
-}
-
-.card-img-box {
-    text-align: right;
 }
 
 /* CARD-CENTER */
